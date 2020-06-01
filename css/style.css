@@ -15,6 +15,8 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 23px;
+  outline: none;
 }
 
 .start_game {
@@ -32,18 +34,30 @@ h1 {
   text-align: center;
   padding: 20px;
 }
+
 td {
   width: 100px;
   height: 100px;
+  padding: 0%;
 }
+td span {
+  height:99%;
+  width: auto;
+  /* background-color:pink; */
+  display:block;
+  overflow:auto;
+}
+
 table {
   margin: 5px auto;
 }
+
 .vert {
   border-left: 6px solid rgb(84, 84, 84);
   border-right: 6px solid rgb(84, 84, 84);
   opacity: 1;
 }
+
 .hori {
   border-top: 6px solid rgb(84, 84, 84);
   border-bottom: 6px solid rgb(84, 84, 84);
@@ -72,7 +86,6 @@ table {
   background-position:center center;
   background-size: 70% 70%, auto;
   -webkit-transition-duration: 0.125s;
-  display: inline-block;
 }
 
 /* Draw the Circle */
@@ -82,4 +95,9 @@ table {
   background-position:center center;
   background-size: 80% 80%, auto;
   -webkit-transition-duration: 0.125s;
+}
+
+.playerShadow {
+  box-shadow: 0px 5px;
+  color: #14bdac;
 }

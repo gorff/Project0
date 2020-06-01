@@ -13,8 +13,6 @@ const game = {  // use an object to keep code neatly grouped...
     } else { // means x is default first player
       xMarksTurn = true
     };
-    console.log('who first');
-    console.log(xMarksTurn);
     return // return something here
   },
 
