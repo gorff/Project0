@@ -15,11 +15,11 @@ $(document).ready(function () {
   // render first to add playershadow etc
   render();
 
-  // if any td's are clicked
+  // if any span's are clicked
   $('span').on('click', function () {
     if (!(this.className.includes('xmark')) && !(this.className.includes('circle'))) {
       let xOrO = game.naughtOrCross();
-      // game.test($('td').index(this)); // get index of td that's been clicked.
+      console.log($('span').index(this)); // get index of span that's been clicked.
       $(this).addClass(`${xOrO}`).slideDown('slow');
     };
   });
@@ -40,26 +40,13 @@ $(document).ready(function () {
       $('#buttonX').removeClass('playerShadow');
     };
   });
-  //
-  // $('#a3').on('click', function () {
-  //   $('#a3').addClass('xmark').slideDown('slow');
-  // });
-  //
-  // $('#b3').on('click', function () {
-  //   $('#b3').addClass('xmark').slideDown('slow');
-  // });
-  //
-  // $('#c3').on('click', function () {
-  //   $('#c3').addClass('circle').slideDown('slow');
-  // });
 
   // Restart Game
   $('.restart_game_button').on('click', function () {
     $("td span").css('background', 'none');
     $("td span").removeClass('xmark circle');
-    // $('xmark circle').remove();
     $(".start_game").addClass("animate__animated animate__bounce");
-    // $('td').unbind();
+    $("td span").css('background', '');
     turnCount = 0;
   });
   // render();

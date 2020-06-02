@@ -29,6 +29,27 @@ const game = {  // use an object to keep code neatly grouped...
       xMarksTurn = true;
       return 'circle'
     }
+  },
+
+  // function to check if a,b,c match, therefore a win
+  // equals: function (a,b,c) {
+  //   return(a === b && b === c && a !== '')
+  // },
+
+  // Keep index of moves to see who won/draw
+  checkWinOrDraw: function (index, ) {
+    currentMoves = {}
+    let winner = null;
+    // check horizontal winners
+    currentMoves += index
+    for (let i = 0; i < 3; i++) {
+      if (index)
+    }
+    // check vertical winners
+
+    // check diagonal winners (left to right & right to left)
+
+    // if winner is null && no more moves, console.log 'Tie'
   }
 
 };
